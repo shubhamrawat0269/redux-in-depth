@@ -6,10 +6,6 @@ export const myCreateStore = (reducer) => {
     state = reducer(state, action);
   }
 
-  function subscribe() {
-    // trigger when action dispatch....
-  }
-
   function getState() {
     // getting state value....
     return state;
@@ -17,7 +13,6 @@ export const myCreateStore = (reducer) => {
 
   const store = {
     dispatch,
-    subscribe,
     getState,
   };
 
